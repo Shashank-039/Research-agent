@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Research Agent</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+
+</head>
+
+
+<body>
+
+
+    <div class="page">
+
+
+        <header class="header">
+
+            <div class="logo">
+
+                <div class="logo-icon">
+                    AI
+                </div>
+
+                <div>
+
+                    <h1>AI Research Agent</h1>
+
+                    <p>Research smarter. Get answers with sources.</p>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+
+        <main class="main">
+
+
+            <section class="welcome">
+
+                <h2>What would you like to research?</h2>
+
+                <p>
+                    Enter your question below and the Research Agent
+                    will find relevant information for you.
+                </p>
+
+            </section>
+
+
+
+            <section class="search-card">
+
+
+                <label for="question">
+                    Research Question
+                </label>
+
+
+                <textarea
+                    id="question"
+                    placeholder="Example: What is artificial intelligence?"
+                ></textarea>
+
+
+
+                <div class="button-area">
+
+                    <button
+                        id="researchButton"
+                        onclick="researchQuestion()"
+                    >
+
+                        🔍 Start Research
+
+                    </button>
+
+                    <button
+                        class="clear-button"
+                        onclick="clearQuestion()"
+                    >
+
+                        Clear
+
+                    </button>
+
+                </div>
+
+
+                <div
+                    id="loading"
+                    class="loading"
+                >
+
+                    <div class="spinner"></div>
+
+                    <span>
+                        Researching your question...
+                    </span>
+
+                </div>
+
+
+            </section>
+
+
+
+            <section
+                id="resultSection"
+                class="result-card"
+            >
+
+
+                <div class="result-header">
+
+                    <h2>Research Result</h2>
+
+                    <span id="status">
+                        Ready
+                    </span>
+
+                </div>
+
+
+                <div
+                    id="answer"
+                    class="answer"
+                >
+
+                    Your research result will appear here.
+
+                </div>
+
+
+            </section>
+
+
+        </main>
+
+
+
+        <footer>
+
+            <p>
+                AI Research Agent • Powered by FastAPI
+            </p>
+
+        </footer>
+
+
+    </div>
+
+
+
+    <script src="/static/script.js"></script>
+
+
+</body>
+
+</html>

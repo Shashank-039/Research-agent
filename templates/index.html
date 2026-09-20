@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<meta http-equiv="Cache-Control"
+      content="no-cache, no-store, must-revalidate">
+
+<meta http-equiv="Pragma"
+      content="no-cache">
+
+<meta http-equiv="Expires"
+      content="0">
+
+<title>AI Research Agent</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #050816;
+    color: white;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 850px;
+    margin: 80px auto;
+}
+
+.logo {
+    text-align: center;
+    font-size: 55px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 45px;
+    color: #60a5fa;
+}
+
+.subtitle {
+    text-align: center;
+    color: #94a3b8;
+    margin-bottom: 35px;
+}
+
+.card {
+    background: #0f172a;
+    border: 1px solid #1e293b;
+    border-radius: 18px;
+    padding: 28px;
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 100%;
+    min-height: 170px;
+    padding: 16px;
+    background: #020617;
+    color: white;
+    border: 1px solid #334155;
+    border-radius: 12px;
+    font-size: 16px;
+    resize: vertical;
+}
+
+button {
+    width: 100%;
+    margin-top: 15px;
+    padding: 16px;
+    border: 0;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #2563eb, #7c3aed);
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: .9;
+    transform: translateY(-2px);
+}
+
+.question {
+    color: #60a5fa;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.answer {
+    margin-top: 10px;
+    padding: 18px;
+    background: #020617;
+    border-left: 4px solid #3b82f6;
+    border-radius: 8px;
+    line-height: 1.7;
+    color: #cbd5e1;
+}
+
+.source {
+    margin-top: 12px;
+    padding: 14px;
+    background: #111c33;
+    border-radius: 8px;
+}
+
+.source-title {
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+.source a {
+    color: #60a5fa;
+    text-decoration: none;
+}
+
+.source a:hover {
+    text-decoration: underline;
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+<div class="logo">
+🔎
+</div>
+
+<h1>
+AI Research Agent
+</h1>
+
+<p class="subtitle">
+Brief information with reliable source links
+</p>
+
+
+<!-- RESEARCH BOX -->
+
+<div class="card">
+
+<form action="/research" method="POST">
+
+<textarea
+name="questions"
+placeholder="What is AI?
+What is a laptop?
+How does cloud computing work?"
+required></textarea>
+
+<button type="submit">
+✨ Start Research
+</button>
+
+</form>
+
+</div>
+
+
+<!-- RESULTS ONLY APPEAR AFTER RESEARCH -->
+
+{% if results %}
+
+<h2>
+Research Results
+</h2>
+
+
+{% for result in results %}
+
+<div class="card">
+
+<div class="question">
+Question {{ loop.index }}
+</div>
+
+<h2>
+{{ result.question }}
+</h2>
+
+<h3>
+Answer
+</h3>
+
+<div class="answer">
+{{ result.answer }}
+</div>
+
+
+{% if result.sources %}
+
+<h3>
+🔗 Sources
+</h3>
+
+
+{% for source in result.sources %}
+
+<div class="source">
+
+<div class="source-title">
+{{ source.title }}
+</div>
+
+<a
+href="{{ source.url }}"
+target="_blank">
+
+Open Source →
+
+</a>
+
+</div>
+
+{% endfor %}
+
+{% endif %}
+
+</div>
+
+{% endfor %}
+
+{% endif %}
+
+
+</div>
+
+</body>
+
+</html>
+

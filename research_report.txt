@@ -1,0 +1,42 @@
+
+============================================================
+QUESTION 1
+============================================================
+
+what is ai
+
+ANSWER:
+Artificial intelligence (AI) is the ability of computer systems to do things that normally need human brains. It can learn from data, reason about problems, solve puzzles, see or hear things, and make decisions. Think of a computer that can play chess, recognize faces in photos, or suggest songs you might like. AI works by using math, logic and large amounts of information to imitate how people think. The term is not just one tool; it is a public idea that people shape and refine through the programs, robots, and apps we create and use every day. In short, AI lets machines act smarter and helps us solve complex tasks faster than we could alone.
+
+SOURCES:
+[Source 1] What If I Said
+https://en.wikipedia.org/wiki/What_If_I_Said
+
+[Source 2] Artificial intelligence - Wikipedia
+https://en.wikipedia.org/wiki/Artificial_intelligence
+
+[Source 3] What is AI
+https://grokipedia.com/page/what-is-ai
+
+
+============================================================
+QUESTION 2
+============================================================
+
+how many states in india
+
+ANSWER:
+India has 28 states.  
+
+The country’s political map is divided into two kinds of territories: states and union territories. States have their own elected governments and more powers, while union territories are administered by the central government. As of the latest update, there are 28 states and 8 union territories. These divisions are set by the Indian Constitution and are used for everything from local governance to statistical reporting. The number of states has remained 28 since the reorganization in 2015, when the former state of Jammu and Kashmir was divided into two union territories. Thus, when you ask “how many states in India,” the answer is 28.
+
+SOURCES:
+[Source 1] States and union territories of India - Wikipedia
+https://en.wikipedia.org/wiki/States_and_union_territories_of_India
+
+[Source 2] How Many States in India
+https://unacademy.com/content/upsc/study-material/general-awareness/how-many-states-in-india/
+
+[Source 3] India State/ UT & Districts | Facts of India | Explore India | National Portal of India
+https://www.india.gov.in/explore-india/facts-of-india/states-ut-districts
+
